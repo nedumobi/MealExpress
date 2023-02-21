@@ -1,0 +1,5 @@
+Pushing updates to github
+
+git remote add origin https://github.com/nedumobi/MealExpress.git
+git branch -M main
+git push -u origin main

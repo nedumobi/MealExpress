@@ -12,11 +12,16 @@
   }
   ```
 */
+const sushiPicture = new URL(
+  "https://images.unsplash.com/photo-1617196034738-26c5f7c977ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+);
+
 export default function Searchbar() {
   return (
-    <div className="bg-white py-16 sm:py-24">
+    <div className="bg-grey-600 sm:py-2">
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
+        <div>
+          <img className="h-screen w-full" src={sushiPicture} alt="Sushi" />
           <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Order your food for a yummy experience.
           </h2>
@@ -35,7 +40,7 @@ export default function Searchbar() {
             />
             <button
               type="submit"
-              className="flex-none rounded-md bg-white py-1.5 px-3.5 text-base font-semibold leading-7 text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="flex-none rounded-md bg-orange-600 py-1.5 px-3.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Find location
             </button>
